@@ -18,4 +18,14 @@ print(events_Array[0].keys())
 
 index = 0
 for index in range(len(events_Array)):
+	print("Event Name:", end =" ")
 	print(events_Array[index]['name'])
+	print("Place:", end =" ")
+	print(events_Array[index]['place']['name'])
+	print("Start Time:", end =" ")
+	print(events_Array[index]['start_time'])
+	print("End Name:", end =" ")
+	print(events_Array[index]['end_time'])
+	print("Description:", end =" ")
+	print(events_Array[index]['description'])
+	print("")
