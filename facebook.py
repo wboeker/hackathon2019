@@ -2,7 +2,7 @@ import requests
 import json
 
 # constants, making it easier for you to modify/reuse
-TOKEN = "EAAhCG2XgvzMBAPMDKIiMvhAn6e7TpRtMYSVZCsGPrl5jsHfrLBRlBtWWKhNgBDfKTAZB8QsbPxf0RGoVc4yFBHqoLElNZCZBZA86OZBYZC2gO9AnZAe4upgkcRZBSclOgykDNzhSvWqSgdTs0FrbSYHE4RnOGL8EVAly41ZBbxfZCiQnvbTtmCQOyoqlVGeM3iXxI3qGtmi60Ch8AZDZD"
+TOKEN = "EAAhCG2XgvzMBABq8O2ZC1CfochYCpRUzngqp18zGs4WdlQZByS4R4OAKDT9zSVozkA5IZBN2h5P2AdeXd0lGqYZCrixQvglaAZBpDLXdUnaSYUKVtuHsE5kSTjRZBtLs1RBtaNrY7HQZAswfD5WSlZBP62qeJUHSbOxqP5xt9lHzvxQisC5XfUbyx1oQDz1C5lfQrWlWScZBpHQZDZD"
 FIELDS = "id,name,events" #if you need additional fields, add a comma(,) followed by the name; NO SPACE IN BETWEEN!!
 
 # if you need additional parameters, add an and sign(&) to the end of the string,
@@ -14,6 +14,8 @@ data_string = response.text # response from the API call, in string
 data_json = json.loads(data_string) # converts to JSON
 events_Array = data_json["events"]["data"] # an array/list of JSON/dictionary objects
 
-print(events_Array[0])
+print(events_Array[0].keys())
 
-
+index = 0
+for index in range(len(events_Array)):
+	print(events_Array[index]['name'])
