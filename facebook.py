@@ -2,7 +2,7 @@ import requests
 import json
 
 # constants, making it easier for you to modify/reuse
-TOKEN = "EAAhCG2XgvzMBACbYLRb3N9yBxj89ZB1xwVPkcyp5vQnsPB6JBmXVoWby3QlN2WlwhEZCdZCZCefzwrVH2zhtMSh1pZBZBSYo0ZBn28DKRgQDtfq4zpZCY8OhkZA1clBjc90G05bXoEYurwyUnLWSdOdj9JdVWGkc4xXEulzmWdJKBJJpa6db73NODXrquOY7hQFpx5fZCSRTArHQZDZD"
+TOKEN = "EAAhCG2XgvzMBAJCMeUza99ayev0QsfDj6f1AY89wlWu3qgzVexBc9RrZBqVX0QAxTxuyhgIoCZC8feVxZBjusH8V0jdDBp"
 FIELDS = "id,name,events" #if you need additional fields, add a comma(,) followed by the name; NO SPACE IN BETWEEN!!
 
 # if you need additional parameters, add an and sign(&) to the end of the string,
