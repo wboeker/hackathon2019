@@ -19,8 +19,8 @@ EVENT = {
     'location': 'Georgetown University',
     'description': 'This is a very nice test event please come we are desperate!',
     'attendees': [
-        {'email': 'dry6@georgetown.edu'},
-        {'email': 'sxh2@georgetown.edu'},
+        {'email': 'test1@email.com'},
+        {'email': 'test2@email.com'},
     ],
 }
 
