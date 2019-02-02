@@ -1,0 +1,9 @@
+language: node_js
+
+before_script:
+  - env
+
+node_js:
+  - '4'
+  - '6'
+  - '8'
