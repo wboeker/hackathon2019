@@ -14,15 +14,17 @@ GCAL = discovery.build('calendar', 'v3', http=creds.authorize(Http()))
 GMT_OFF = '-07:00'      # PDT/MST/GMT-7
 EVENT = {
     'summary': 'The Real Test',
-    'start':  {'dateTime': '2019-09-16T19:00:00%s' % GMT_OFF},
-    'end':    {'dateTime': '2019-09-16T22:00:00%s' % GMT_OFF},
+    'start':  {'dateTime': '2019-02-13T19:00:00%s' % GMT_OFF},
+    'end':    {'dateTime': '2019-02-13T22:00:00%s' % GMT_OFF},
+    'location': 'Georgetown University',
+    'description': 'This is a very nice test event please come we are desperate!',
     'attendees': [
-        {'email': 'friend1@example.com'},
-        {'email': 'friend2@example.com'},
+        {'email': 'dry6@georgetown.edu'},
+        {'email': 'sxh2@georgetown.edu'},
     ],
 }
 
-e = GCAL.events().insert(calendarId='primary',
+e = GCAL.events().insert(calendarId='3vh66p2d72g0gnv7cl5m06s42o@group.calendar.google.com',
         sendNotifications=True, body=EVENT).execute()
 
 print('''*** %r event added:
